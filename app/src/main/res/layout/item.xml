@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="1dp">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <ImageView
+            android:id="@+id/icon_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/ssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="OLOLO"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/wifi_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ssid"
+            android:text="2.4G"/>
+
+        <TextView
+            android:id="@+id/wifi_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ssid"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/wifi_frequency"
+            android:text="chanel 11"/>
+
+        <TextView
+            android:id="@+id/signal_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/icon_expand"
+            android:text="45dB"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/signal_power"
+            android:text="chanel 11"/>
+
+        <RelativeLayout
+            android:id="@+id/rlItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wifi_frequency"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/btn_chart"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btn_subscribe"
+                android:text="Chart"
+                android:textSize="12sp"
+                android:visibility="visible"/>
+
+            <Button
+                android:id="@+id/btn_subscribe"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btn_notify"
+                android:layout_toStartOf="@+id/btn_notify"
+                android:text="Subscribe for updates"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:visibility="visible"/>
+
+            <Button
+                android:id="@+id/btn_notify"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btn_subscribe"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Notify loudly"
+                android:textSize="12sp"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
